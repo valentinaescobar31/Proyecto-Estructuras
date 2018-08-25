@@ -17,14 +17,25 @@ protected:
     double costoSilla;
 
 public:
-    void CargarArchivoRuta (string nomarchivo)
-    {
-        ifstream myfile(nomarchivo.c_str());
-        //string
 
+    ruta();
+    virtual ~ruta();
+    void SetCodigoVuelo(string cod);
+    void SetDia (string d);
+    void SetCiudadO(string origen);
+    void SetCiudadD(string destino);
+    void SetHoraSalida (unsigned int horaS);
+    void SetTiempoVuelo (unsigned int temp);
+    void SetCostoSilla (double costo);
 
+    string GetCodigoVuelo();
+    string GetDia();
+    string GetCiudadO();
+    string GetCiudadD();
+    unsigned int GetHoraSalida();
+    unsigned int GetTiempoVuelo();
+    double GetCostoSilla();
 
-    }
 
 };
 
