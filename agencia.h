@@ -1,34 +1,43 @@
-#ifndef AGENCIA_H_INCLUDED
-#define AGENCIA_H_INCLUDED
-
-#include <list>
-
+#ifndef RUTA_H_INCLUDED
+#define RUTA_H_INCLUDED
+#include <fstream>
 using namespace std;
 
-class agencia
+class ruta
 {
-
 protected:
 
-    string idAgencia;
-    string nombre;
-    list <ruta> rutas;
-    list <venta> ventas;
-    list <contrasena> contrasenas;
+    string codigoVuelo;
+    string dia;
+    string ciudadO;
+    string ciudadD;
+    unsigned int horaSalida;
+    unsigned int tiempoVuelo;
+    unsigned int cantSillas;
+    double costoSilla;
 
 public:
 
-    string verificarAgencia (string id)
-    {
+    ruta();
+    virtual ~ruta();
+    void SetCodigoVuelo(string cod);
+    void SetDia (string d);
+    void SetCiudadO(string origen);
+    void SetCiudadD(string destino);
+    void SetHoraSalida (unsigned int horaS);
+    void SetTiempoVuelo (unsigned int temp);
+    void SetCostoSilla (double costo);
 
-        string idVer;
-
-        return idVer;
-
-
-    }
+    string GetCodigoVuelo();
+    string GetDia();
+    string GetCiudadO();
+    string GetCiudadD();
+    unsigned int GetHoraSalida();
+    unsigned int GetTiempoVuelo();
+    double GetCostoSilla();
 
 
 };
 
-#endif // AGENCIA_H_INCLUDED
+
+#endif // RUTA_H_INCLUDED
