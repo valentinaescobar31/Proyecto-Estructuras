@@ -18,14 +18,28 @@ protected:
     double cedula;
 
 public:
-    void CargarArchivoVenta (string nomarchivo)
-    {
+
+    venta();
+    virtual ~venta();
+    void SetIdAgencia(string idA);
+    void SetCodigoV (string codv);
+    void SetApellidos(string ap);
+    void SetNombres (string noms);
+    void SetFecha (string fech);
+    void SetFechaVenta(string fechaV);
+    void SetHoraVenta (unsigned int horaV);
+    void SetCedula(double ced);
+
+    string GetIdAgencia();
+    string GetCodigoV();
+    string GetApellidos();
+    string GetNombres();
+    string GetFecha();
+    string GetFechaVenta();
+    unsigned int GetHoraVenta();
+    double GetCedula();
 
 
-
-
-
-    }
 
 
 
@@ -34,3 +48,4 @@ public:
 
 
 #endif // VENTA_H_INCLUDED
+
