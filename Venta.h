@@ -9,35 +9,116 @@ class venta
 protected:
 
     string idAgencia;
+    //string identificador;
     string codigoV;
     string apellidos;
     string nombres;
     string fecha;
     string fechaVenta;
     unsigned int horaVenta;
-    double cedula;
+    string cedula;
 
 public:
 
-    venta();
-    virtual ~venta();
-    void SetIdAgencia(string idA);
-    void SetCodigoV (string codv);
-    void SetApellidos(string ap);
-    void SetNombres (string noms);
-    void SetFecha (string fech);
-    void SetFechaVenta(string fechaV);
-    void SetHoraVenta (unsigned int horaV);
-    void SetCedula(double ced);
+    //venta();
+    // virtual ~venta();
+    void SetIdAgencia(string idA)
+    {
 
-    string GetIdAgencia();
-    string GetCodigoV();
-    string GetApellidos();
-    string GetNombres();
-    string GetFecha();
-    string GetFechaVenta();
-    unsigned int GetHoraVenta();
-    double GetCedula();
+        idAgencia = idA;
+
+    }
+
+    void SetCodigoV (string codv)
+    {
+
+        codigoV = codv;
+
+    }
+    void SetApellidos(string ap)
+    {
+
+        apellidos = ap;
+
+    }
+    void SetNombres (string noms)
+    {
+
+        nombres = noms;
+
+    }
+    void SetFecha (string fech)
+    {
+
+        fecha = fech;
+    }
+    void SetFechaVenta(string fechaV)
+    {
+
+        fechaVenta = fechaV;
+
+    }
+    void SetHoraVenta (unsigned int horaV)
+    {
+
+        horaVenta = horaV;
+
+    }
+    void SetCedula(string ced)
+    {
+
+        cedula = ced;
+
+    }
+
+    string GetIdAgencia()
+    {
+        return idAgencia;
+
+    }
+
+
+    string GetCodigoV()
+    {
+
+       return codigoV;
+
+    }
+    string GetApellidos()
+    {
+
+       return apellidos;
+
+    }
+    string GetNombres()
+    {
+
+       return nombres;
+
+    }
+    string GetFecha()
+    {
+
+       return fecha;
+
+    }
+    string GetFechaVenta()
+    {
+       return fechaVenta;
+
+    }
+    unsigned int GetHoraVenta()
+    {
+       return horaVenta;
+
+
+    }
+    string GetCedula()
+    {
+
+      return cedula;
+
+    }
 
 
 
@@ -48,4 +129,3 @@ public:
 
 
 #endif // VENTA_H_INCLUDED
-
